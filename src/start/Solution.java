@@ -142,10 +142,11 @@ public class Solution {
 		// Stim prea bine ca daca diagoanala este pe aceeasi axa, nu putem obtine un dreptunghi.
 		// Folosind structura HashMap, o sa parcurg punctele astfel incat nu o sa compar 2 puncte care au aceeasi coordonata x
 		
-		// Primul si al doilea for vor itera prin fiecare serie de puncte (seria are aceeasi coordonata x)
+		// Primul si al doilea for vor itera de la o serie la alta (seria are aceeasi coordonata x)
 		// Al treilea si al patrulea for vor itera prin elementele fiecarei serii.
 		
 		// Aceasta metoda este costisitoare din punctul de vedere al memoriei, dar la un numar mai mare de date, va da dovada de eficienta
+		
 		for (int i = 0; i < arr.size(); i++) { // Coordonata x - primul punct
 			for (int j = i + 1; j < arr.size(); j++) { // Coordonata x - al doilea punct
 				for (Float z : arr.get(i).getValue()) { // Coordonata y - primul punct 
